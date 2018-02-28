@@ -4,3 +4,7 @@ def sum(f:Int=>Int):(Int,Int)=>Int={
         else f(a)+sumF(a+1,b)
     sumF    
 }
+
+def sumInt=sum(x=>x)
+def sumCube=sum(x=>x*x)
+def sumFactorials=sum(fact)
